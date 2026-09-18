@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Ida Ayu Bintang Greysha Mey Amora ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe6eb 0%, #def3ff 100%);
+            color: #4a4a4a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 600px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e63946;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #d62828;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .letter-box {
+            background: #fff5f6;
+            border-left: 4px solid #e63946;
+            padding: 15px;
+            text-align: left;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            background: #f0f0f0;
+            height: 120px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9rem;
+            border: 2px dashed #ffb7c5;
+        }
+
+        .coupons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .coupon-card {
+            background: #fff;
+            border: 2px dashed #e63946;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #d62828;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            position: relative;
+            min-height: 50px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-yes {
+            background-color: #2a9d8f;
+            color: white;
+            box-shadow: 0 4px 10px rgba(42, 157, 143, 0.3);
+        }
+
+        .btn-yes:hover {
+            background-color: #21867a;
+            transform: scale(1.05);
+        }
+
+        .btn-no {
+            background-color: #e63946;
+            color: white;
+            position: absolute;
+            box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
+        }
+
+        #response-msg {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hai, Ida Ayu Bintang Greysha Mey Amora ❤️</h1>
+        <p><i>Ada pesan tulus dari Rafly buat kamu...</i></p>
+
+        <div class="letter-box">
+            <p><b>Sayangku Amora,</b></p>
+            <p>Aku minta maaf yang sebesar-besarnya ya atas kelakuan aku kemarin. Gara-gara aku begadang seharian terus bablas tidur seharian tanpa ngabarin kamu sama sekali, aku udah bikin kamu khawatir, kecewa, dan ditinggal sendirian.</p>
+            <p>Aku tahu kamu berhak banget marah dan <i>badmood</i>. Aku nyesel banget gak mikirin perasaan kamu pas itu. Aku takut banget kalau kamu sampai ngerasa gak suka lagi sama aku gara-gara kecerobohan aku ini.</p>
+            <p>Aku janji bakal perbaiki pola tidur aku dan bakal selalu mengabari kamu dalam keadaan apapun. Tolong maafin aku ya, Sayang... 🥺</p>
+        </div>
+
+        <h2>🎟️ Kupon Permintaan Maaf (Bisa Kamu Klaim Kapan Aja!)</h2>
+        <div class="coupons">
+            <div class="coupon-card">🎁 Kupon 1: Dibelikan Makanan/Minuman Favorit Kamu</div>
+            <div class="coupon-card">🗣️ Kupon 2: Bebas Marahin & Omelin Rafly Sepuasnya</div>
+            <div class="coupon-card">🍿 Kupon 3: Jalan-Jalan & Nonton Film Pilihan Kamu</div>
+        </div>
+
+        <h2>Maafin Rafly Enggak? 🥺</h2>
+        <div class="btn-group">
+            <button class="btn-yes" onclick="forgive()">Maafin ❤️</button>
+            <button class="btn-no" id="btn-no" onmouseover="moveButton()">Enggak 😜</button>
+        </div>
+
+        <div id="response-msg">
+            🎉 Makasih banyak ya Sayang! Janji deh Rafly gak bakal gitu lagi. I love you so much, Ida Ayu! ❤️✨
+        </div>
+    </div>
+
+    <script>
+        function moveButton() {
+            const btnNo = document.getElementById('btn-no');
+            const x = Math.random() * (window.innerWidth - btnNo.offsetWidth - 40);
+            const y = Math.random() * (window.innerHeight - btnNo.offsetHeight - 40);
+            btnNo.style.position = 'fixed';
+            btnNo.style.left = x + 'px';
+            btnNo.style.top = y + 'px';
+        }
+
+        function forgive() {
+            document.getElementById('response-msg').style.display = 'block';
+            document.querySelector('.btn-group').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
